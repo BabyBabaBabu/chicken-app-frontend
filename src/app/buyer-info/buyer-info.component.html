@@ -1,0 +1,40 @@
+<div>
+    <h3>Buyer Information</h3>
+</div>
+<div class="nav-button">
+    <button (click)="goToBuyersList()">
+        Back
+    </button>
+    <button (click)="goToOrders()">
+        Orders
+    </button>
+</div>
+
+<router-outlet></router-outlet>
+
+<div>
+    <form action="" method="">
+        <label for="name">Buyer name</label>
+        <input type="text" name="name" id="name">
+        <label for="contact">Contact</label>
+        <input type="tel" name="phone" id="phone">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="region">Region</label>
+        <input type="text" name="region" id="region">
+        <label for="estate">Estate</label>
+        <input type="text" name="estate" id="estate">
+        <br>
+        <input type="submit" value="Edit">
+        <input type="reset" value="Cancel">
+    </form>
+</div>
+
+<div class="nav-button">
+    <button (click)="getPrevious()">
+        Previous
+    </button>
+    <button (click)="getNext()">
+        Next
+    </button>
+</div>

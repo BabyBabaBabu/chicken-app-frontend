@@ -1,0 +1,36 @@
+<div>
+    {{errorMessage}}
+</div>
+<div>
+    <h3>Buyers</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Region</th>
+            <th>Estate</th>
+            
+        </tr>
+    </thead>
+        <tbody *ngFor= "let buyer of mybuyers">
+            <tr [class.selected] = "isSelected(buyer)">
+                <td>
+                   {{buyer.name}} 
+                </td>
+                <td>
+                    {{buyer.contact}} 
+                </td>
+                <td>
+                    {{buyer.region}}
+                </td>
+                <td>
+                    {{buyer.estate}}
+                </td>
+                <td>
+                    <button (click)="onSelect(buyer)"> Info </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>  
+</div>

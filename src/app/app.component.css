@@ -1,0 +1,42 @@
+h2{
+    color: maroon;
+    text-decoration: underline #000 dotted; 
+}
+.tagline{
+    color: blue;
+    
+}
+.brand{
+   line-height: 2px;
+   text-align: left;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: maroon;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #3c3ce4;
+}
+
+li a.active {
+  background-color: #3c3ce4;
+}
